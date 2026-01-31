@@ -65,7 +65,7 @@ app.post("/api/login", async (req, res) => {
       role: user.role,
     },
     SECRET_KEY,
-    { expiresIn: "2h" }, // Wristband expires in 2 hours
+    { expiresIn: "1m" }, // Wristband expires in 2 hours
   );
 
   res.json({
